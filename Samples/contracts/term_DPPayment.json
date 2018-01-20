@@ -1,0 +1,27 @@
+{
+      "name": "DPPayment",
+      "type": "DPPayments",
+      "constraints": [      {
+         "name": "DPPayment",
+         "type": "",
+         "enforcementScript": "DPPayment",
+         "compositionScript": null,
+         "description": "perform payment per datapoint message",
+         "parameters": [         {
+            "name": "DPPaymentAmount",
+            "datatype": "String",
+            "description": "payment amount",
+            "unit": "Wei"
+         },{
+            "name": "DPPaymentSender",
+            "datatype": "String",
+            "description": "payment sender",
+            "unit": "Address"
+         },{
+            "name": "DPPaymentReceiver",
+            "datatype": "String",
+            "description": "payment receiver",
+            "unit": "Address"
+         }]
+      }]
+}

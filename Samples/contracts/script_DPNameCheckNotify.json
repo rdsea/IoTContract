@@ -1,0 +1,5 @@
+{
+   "name": "DPNameCheck",
+   "code": "var checkDPName = @DPName; if (!Boolean(dataPoint.getName() == checkDPName)) {_reason='NOTIFY';_log='access not allowed';} ",
+   "version": "1.0"
+}

@@ -1,0 +1,27 @@
+{
+	"routes" : [
+		{
+			"from" : { "thing" : "TSensor1", "port" : "T-OUT-1" },
+			"to" : { "thing" : "TController1", "port" : "T-IN-1" }
+		},
+		{
+			"from" : { "thing" : "TController1", "port" : "T-OUT-1" },
+			"to" : { "thing" : "TActor1", "port" : "T-IN-1" }
+		}
+	],
+    "physicalAddresses" : [
+		{
+			"thing" : "TSensor1",
+			"address" : ""
+		},
+		{
+			"thing" : "TController1",
+			"address" : ""
+		},
+		{
+			"thing" : "TActor1",
+			"address" : ""
+		}
+	
+	]
+}

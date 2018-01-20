@@ -1,0 +1,59 @@
+{
+	"ports" : [
+		{"name": "T-IN-1",
+		 "adapter" : "FILE",
+		 "type" :"DATA",
+		 "direction" : "IN"},
+		{"name": "T-OUT-1",
+		 "adapter" : "MQTT",
+		 "type" :"DATA",
+		 "direction" : "OUT"}
+	],
+	"dataPoints" : [
+		{
+			"port" : "T-IN-1",
+			"points" : ["temperature"]
+		},
+		{
+			"port" : "T-OUT-1",
+			"points" : ["temperature"]
+		}
+	],
+	"portParameters" : [
+		{
+			"port" : "T-IN-1",
+			"attributes" : [
+				{
+					"name" : "filename",
+					"value" : "J:\\Informatik\\Master Thesis\\thesis-repo\\work_sw\\ThingSim\\TSensor_T-IN-1_input.json"
+				},
+				{
+					"name" : "repeatDelay",
+					"value" : "5"
+				},
+				{
+					"name" : "nrOfRepeats",
+					"value" : "10"
+				},
+				{
+					"name" : "fileformat",
+					"value" : "csv"
+				},
+				{
+					"name" : "nameColumn",
+					"value" : "datapoint_id"
+				},
+				{
+					"name" : "timestampColumn",
+					"value" : "event_time"
+				},
+				{
+					"name" : "valueColumns",
+					"value" : "value"
+				}
+			]
+		}
+	],
+	"scriptfile" : "J:\\Informatik\\Master Thesis\\thesis-repo\\work_sw\\ThingSim\\TSensor.js",
+	"name" : "TSensor1"
+}

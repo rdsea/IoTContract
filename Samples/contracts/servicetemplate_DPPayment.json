@@ -1,0 +1,43 @@
+{
+   "uuid": "DPPayment",
+   "name": "DPPayment",
+   "contract":    {
+      "name": "DPPaymentContract",
+      "template": "DPPaymentTemplate",
+      "partners": [      {
+         "name": "Alice"
+      },      {
+         "name": "Bob"
+      }],
+      "items": [      {
+         "name": "SimpleSensor"
+      }],
+      "parameters": [      {
+         "name": "DPPaymentAmount",
+         "datatype": "String",
+         "description": "Payment Amount",
+         "unit": "Wei",
+         "value": "5"
+      },{
+         "name": "DPPaymentSender",
+         "datatype": "String",
+         "description": "payment sender",
+         "unit": "Address",
+		 "value": "0xffcf8fdee72ac11b5c542428b35eef5769c409f0"
+      },{
+         "name": "DPPaymentReceiver",
+         "datatype": "String",
+         "description": "payment receiver",
+         "unit": "Address",
+		 "value": "0x22d491bde2303f2f43325b2108d26f1eaba1e32b"
+      }],
+      "metaData": [      {
+         "name": "validFrom",
+         "value": "2016-11-01"
+      }]
+   },
+   "artifacts": [   {
+      "clazz": "at.ac.tuwien.dsg.cloud.elise.model.provider.Artifact",
+      "name": "SimpleSensor"
+   }]
+}

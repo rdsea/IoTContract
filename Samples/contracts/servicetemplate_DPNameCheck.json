@@ -1,0 +1,29 @@
+{
+   "uuid": "DPNameCheck",
+   "name": "DPNameCheck",
+   "contract":    {
+      "name": "DPNameCheckContract",
+      "template": "DPNameCheckTemplate",
+      "partners": [      {
+         "name": "Peter"
+      }],
+      "items": [      {
+         "name": "SimpleSensor"
+      }],
+      "parameters": [      {
+         "name": "DPName",
+         "datatype": "String",
+         "description": "allowed data point",
+         "unit": "dimensionless",
+         "value": "114"
+      }],
+      "metaData": [      {
+         "name": "validFrom",
+         "value": "2016-11-01"
+      }]
+   },
+   "artifacts": [   {
+      "clazz": "at.ac.tuwien.dsg.cloud.elise.model.provider.Artifact",
+      "name": "SimpleSensor"
+   }]
+}

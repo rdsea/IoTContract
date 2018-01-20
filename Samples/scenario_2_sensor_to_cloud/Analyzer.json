@@ -1,0 +1,16 @@
+{
+	"ports" : [
+		{"name": "T-IN-1",
+		 "adapter" : "MQTT",
+		 "type" :"DATA",
+		 "direction" : "IN"}
+	],
+	"dataPoints" : [
+		{
+			"port" : "T-IN-1",
+			"points" : ["114","113"]
+		}
+	],
+	"scriptfile" : "Analyzer.js",
+	"name" : "Analyzer"
+}

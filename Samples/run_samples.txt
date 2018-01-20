@@ -1,0 +1,15 @@
+machine M1: where Salsa is deployed
+machine M2 where ThingSim and ThingGovernor are deployed
+Port redirection from VM of M1 to M2
+
+Ports:
+Salsa: 8080
+ThingGovernor: 8088
+ThingSim: 8081,...
+
+M1: sudo java -jar salsa-engine.jar
+M2: mosquitto -v
+M2: buildContract_DPNameCheck.[bat|sh]
+M2: run_Governor.[bat|sh]
+M2: assignContract_Sensor1160629000_114.[bat|sh]
+M2: run_Sensor1160629000_114.[bat|sh]

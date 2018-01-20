@@ -1,0 +1,26 @@
+{
+	"routes" : [
+		{
+			"from" : { "thing" : "Sensor1160629000_114", "port" : "T-OUT-1" },
+			"to" : { "thing" : "Analyzer", "port" : "T-IN-1" }
+		},
+		{
+			"from" : { "thing" : "Sensor1161114004_114", "port" : "T-OUT-1" },
+			"to" : { "thing" : "Analyzer", "port" : "T-IN-1" }
+		}
+	],
+    "physicalAddresses" : [
+		{
+			"thing" : "Sensor1160629000_114",
+			"address" : ""
+		},
+		{
+			"thing" : "Sensor1161114004_114",
+			"address" : ""
+		},
+		{
+			"thing" : "Analyzer",
+			"address" : ""
+		}
+	]
+}

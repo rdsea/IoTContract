@@ -1,0 +1,19 @@
+{
+	"dataPoints" : [
+		{
+			"name" : "temperature",
+			"value" : "20"
+		},
+		{
+			"name" : "temperature",
+			"value" : "5"
+		},
+		{
+			"name" : "temperature",
+			"value" : "80"
+		}
+		
+	]
+
+	
+}

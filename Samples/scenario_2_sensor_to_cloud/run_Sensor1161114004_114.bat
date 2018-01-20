@@ -1,0 +1,1 @@
+java -DthingConfFile="Sensor1161114004_114.json" -DtopologyFile="topology.json" -DthingName="Sensor1161114004_114" -DmqttBrokerUrl="tcp://localhost:1883" -DthingGovernor="http://localhost:8088" -jar "..\..\ThingSim\target\ThingSim-1.0-SNAPSHOT.jar" --server.port=8082

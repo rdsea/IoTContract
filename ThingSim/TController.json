@@ -1,0 +1,31 @@
+{
+	"ports" : [
+		{"name": "T-IN-1",
+		 "adapter" : "MQTT",
+		 "type" :"DATA",
+		 "direction" : "IN"},
+		{"name": "T-OUT-1",
+		 "adapter" : "MQTT",
+		 "type" :"COMMAND",
+		 "direction" : "OUT"}
+	],
+	"dataPoints" : [
+		{
+			"port" : "T-IN-1",
+			"points" : ["temperature"]
+		}
+	],
+	"commandDefs" : [
+		{
+			"port" : "T-OUT-1",
+			"commands" : [
+				{
+					"name" : "SetHeating",
+					"arguments" : ["On", "Off"]
+				}
+			]
+		}
+	],
+	"scriptfile" : "J:\\Informatik\\Master Thesis\\thesis-repo\\work_sw\\ThingSim\\TController.js",
+	"name" : "TController1"
+}

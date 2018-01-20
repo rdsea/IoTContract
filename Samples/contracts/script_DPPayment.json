@@ -1,0 +1,5 @@
+{
+   "name": "DPPayment",
+   "code": "_amount = @DPPaymentAmount; _sender = @DPPaymentSender; _receiver = @DPPaymentReceiver; ",
+   "version": "1.0"
+}

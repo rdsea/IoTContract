@@ -1,0 +1,43 @@
+{
+   "uuid": "DPNameCheck",
+   "name": "DPNameCheck",
+   "contract":    {
+      "name": "DPFullCheckContract",
+      "template": "DPFullCheckTemplate",
+      "partners": [      {
+         "name": "Peter"
+      }],
+      "items": [      {
+         "name": "SimpleSensor"
+      }],
+      "parameters": [      {
+         "name": "DPName",
+         "datatype": "String",
+         "description": "allowed data point",
+         "unit": "dimensionless",
+         "value": "114"
+      },
+	  {
+         "name": "DPMinValue",
+         "datatype": "Integer",
+         "description": "min value",
+         "unit": "int",
+         "value": "0"
+      },
+	  {
+         "name": "DPMaxValue",
+         "datatype": "Integer",
+         "description": "max value",
+         "unit": "int",
+         "value": "1000"
+      }],
+      "metaData": [      {
+         "name": "validFrom",
+         "value": "2016-11-01"
+      }]
+   },
+   "artifacts": [   {
+      "clazz": "at.ac.tuwien.dsg.cloud.elise.model.provider.Artifact",
+      "name": "SimpleSensor"
+   }]
+}

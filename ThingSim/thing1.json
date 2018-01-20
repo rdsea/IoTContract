@@ -1,0 +1,125 @@
+{
+	"ports" : [
+		{"name": "P1",
+		 "adapter" : "HTTP",
+		 "type" :"DATA",
+		 "direction" : "IN"},
+		{"name": "P2",
+		 "adapter" : "MQTT",
+		 "type" : "DATA",
+		 "direction" : "IN"},
+		{"name": "P3",
+		 "adapter" : "FILE",
+		 "type" :"DATA",
+		 "direction" : "IN"}, 
+		{"name": "P4",
+		 "adapter" : "RANDOM",
+		 "type" :"DATA",
+		 "direction" : "OUT"},
+		{"name": "P5",
+		 "adapter" : "HTTP",
+		 "type" :"DATA",
+		 "direction" : "OUT"},
+		{"name": "P6",
+		 "adapter" : "HTTP",
+		 "type" :"DATA",
+		 "direction" : "IN"},
+		{"name": "P7",
+		 "adapter" : "MQTT",
+		 "type" :"DATA",
+		 "direction" : "OUT"},
+		{"name": "P8",
+		 "adapter" : "MQTT",
+		 "type" :"DATA",
+		 "direction" : "IN"}
+	],
+	"dataPoints" : [
+		{
+			"port" : "P1",
+			"points" : ["temperature","pressure"]
+		},
+		{
+			"port" : "P3",
+			"points" : ["DP1"]
+		},
+		{
+			"port" : "P7",
+			"points" : ["DP1", "temperature"]
+		},
+		{
+			"port" : "P6",
+			"points" : ["temperature"]
+		}
+	],
+	"commandDefs" : [
+		{
+			"port" : "P2",
+			"commands" : [
+				{
+					"name" : "SetValve",
+					"arguments" : ["OnOff"]
+				}
+			]
+		}
+	],
+	"portParameters" : [
+		{
+			"port" : "P1",
+			"attributes" : [
+				{
+					"name" : "filename",
+					"value" : "abc.txt"
+				},
+				{
+					"name" : "repeatDelay",
+					"value" : "5"
+				},
+				{
+					"name" : "nrOfRepeats",
+					"value" : "3"
+				}
+			]
+		},
+		{
+			"port" : "P3",
+			"attributes" : [
+				{
+					"name" : "filename",
+					"value" : "thing1_P3_input.json"
+				},
+				{
+					"name" : "repeatDelay",
+					"value" : "1"
+				},
+				{
+					"name" : "nrOfRepeats",
+					"value" : "3"
+				}
+			]
+		},
+		{
+			"port" : "P4",
+			"attributes" : [
+				{
+					"name" : "mean",
+					"value" : "100.0"
+				},
+				{
+					"name" : "variance",
+					"value" : "5.0"
+				},
+				{
+					"name" : "repeatDelay",
+					"value" : "5"
+				},
+				{
+					"name" : "nrOfRepeats",
+					"value" : "3"
+				}
+			]
+		}
+	],
+	"scriptfile" : "J:\\Informatik\\Master Thesis\\thesis-repo\\work_sw\\ThingSim\\thing1.js",
+	"name" : "thing1",
+	"mqttBrokerUrl" : "tcp://localhost:1883"
+}

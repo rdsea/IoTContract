@@ -1,0 +1,47 @@
+300 events = 1.3 sec
+20:19:18.581
+20:19:19.881
+
+3000 events = 6.3 sec
+20:22:55.342
+20:23:01.883
+
+6000 events = 10.5 sec
+20:32:29.045
+20:32:39.520
+
+300 events with scripting and 30% logging
+20:55:47.670
+20:55:57.375
+
+300 events with scripting
+21:02:38.595
+21:02:39.794
+
+3000 events with scripting
+21:04:49.878
+21:04:56.509
+
+6000 events with scripting
+21:06:41.294
+21:06:52.654
+
+3000 events with scripting and 30% logging
+21:08:46.734
+21:10:09.981
+
+6000 events with scripting and 30% logging
+21:59:11.662
+22:13:59.482
+
+300 events with scripting and 30% logging, No Blockchain
+21:56:08.706
+21:56:14.982
+
+3000 events with scripting and 30% logging, No Blockchain
+21:26:00.619
+21:26:08.999
+
+6000 events with scripting and 30% logging, No Blockchain
+21:29:35.477
+21:29:50.006

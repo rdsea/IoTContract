@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+  <doc xml:lang="en" title="http://localhost:8080"/>
+  <resources base="http://localhost:8080">
+    <resource path="salsa-engine/rest/elise/servicetemplate" id="Servicetemplate">
+      <doc xml:lang="en" title="Servicetemplate"/>
+      <resource path="ST1" id="T1">
+        <doc xml:lang="en" title="T1"/>
+        <method name="GET" id="GET">
+          <doc xml:lang="en" title="GET"/>
+          <request/>
+          <response status="204">
+            <representation mediaType="" element="data"/>
+          </response>
+          <response status="200">
+            <representation mediaType="application/json" element="st1:Response" xmlns:st1="http://localhost/salsa-engine/rest/elise/servicetemplate/ST1"/>
+          </response>
+        </method>
+        <method name="DELETE" id="DELETE">
+          <doc xml:lang="en" title="DELETE"/>
+          <request>
+            <representation mediaType="application/json"/>
+          </request>
+          <response status="">
+            <representation mediaType="application/json"/>
+          </response>
+          <response status="204">
+            <representation mediaType="" element="data"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="DPNameCheck" id="DPNameCheck">
+        <doc xml:lang="en" title="DPNameCheck"/>
+        <method name="GET" id="GET">
+          <doc xml:lang="en" title="GET"/>
+          <request/>
+          <response status="204">
+            <representation mediaType="" element="data"/>
+            <representation mediaType="" element="data"/>
+          </response>
+          <response status="200">
+            <representation mediaType="application/json" element="st1:Response" xmlns:st1="http://localhost/salsa-engine/rest/elise/servicetemplate/ST1"/>
+          </response>
+        </method>
+        <method name="DELETE" id="DELETE">
+          <doc xml:lang="en" title="DELETE"/>
+          <request>
+            <representation mediaType="application/json"/>
+          </request>
+          <response status="">
+            <representation mediaType="application/json"/>
+          </response>
+          <response status="204">
+            <representation mediaType="" element="data"/>
+          </response>
+        </method>
+      </resource>
+      <method name="GET" id="GET">
+        <doc xml:lang="en" title="GET"/>
+        <request/>
+        <response status="200">
+          <representation mediaType="application/json"/>
+          <representation mediaType="text/html;charset=UTF-8"/>
+        </response>
+      </method>
+      <method name="POST" id="POST">
+        <doc xml:lang="en" title="POST"/>
+        <request>
+          <representation mediaType="application/json"/>
+        </request>
+        <response status="">
+          <representation mediaType="application/json"/>
+        </response>
+        <response status="200">
+          <representation mediaType="application/json"/>
+        </response>
+      </method>
+    </resource>
+  </resources>
+</application>

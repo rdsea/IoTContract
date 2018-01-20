@@ -1,0 +1,21 @@
+{
+	"ports" : [
+		{"name": "T-IN-1",
+		 "adapter" : "MQTT",
+		 "type" :"COMMAND",
+		 "direction" : "IN"}
+	],
+	"commandDefs" : [
+		{
+			"port" : "T-IN-1",
+			"commands" : [
+				{
+					"name" : "SetHeating",
+					"arguments" : ["On", "Off"]
+				}
+			]
+		}
+	],
+	"scriptfile" : "J:\\Informatik\\Master Thesis\\thesis-repo\\work_sw\\ThingSim\\TActor.js",
+	"name" : "TActor1"
+}

@@ -1,0 +1,23 @@
+{
+      "name": "DPValueCheck",
+      "type": "DPChecks",
+      "constraints": [      {
+         "name": "DPValueCheck",
+         "type": "",
+         "enforcementScript": "DPValueCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point values",
+         "parameters": [         {
+            "name": "DPMinValue",
+            "datatype": "Integer",
+            "description": "data point min value",
+            "unit": "int"
+         },
+		 {
+            "name": "DPMaxValue",
+            "datatype": "Integer",
+            "description": "data point max value",
+            "unit": "int"
+         }]
+      }]
+   }

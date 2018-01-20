@@ -1,0 +1,10 @@
+{
+	"routes" : [
+	],
+    "physicalAddresses" : [
+		{
+			"thing" : "Sensor1160629000_114",
+			"address" : ""
+		}
+	]
+}

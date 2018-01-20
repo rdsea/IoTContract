@@ -1,0 +1,1 @@
+java -DthingConfFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\TController.json" -DtopologyFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\topology.json" -DmqttBrokerUrl="tcp://localhost:1883" -jar "J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\target\ThingSim-1.0-SNAPSHOT.jar" --server.port=8082   

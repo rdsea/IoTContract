@@ -1,0 +1,134 @@
+{
+      "name": "DPNameCheck_10constr",
+      "type": "DPChecks",
+      "constraints": [      {
+         "name": "DPNameCheck1",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck2",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck3",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck4",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck5",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck6",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck7",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck8",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck9",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      },
+	  {
+         "name": "DPNameCheck10",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      }]
+}

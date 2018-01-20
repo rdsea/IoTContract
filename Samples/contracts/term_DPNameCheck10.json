@@ -1,0 +1,17 @@
+{
+      "name": "DPNameCheck10",
+      "type": "DPChecks",
+      "constraints": [      {
+         "name": "DPNameCheck",
+         "type": "",
+         "enforcementScript": "DPNameCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point name",
+         "parameters": [         {
+            "name": "DPName",
+            "datatype": "String",
+            "description": "data point name",
+            "unit": "identifier"
+         }]
+      }]
+}

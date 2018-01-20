@@ -1,0 +1,1 @@
+curl -v -d @"contract_Sensor1161114004_114.json" -H "Content-Type: application/json" -X POST http://localhost:8088/governor/assign

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DthingConfFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\scenario_1_simple_sensor\Sensor1160629000_114.json" -DtopologyFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\scenario_1_simple_sensor\topology.json" -DthingName="Sensor1160629000_114" -DmqttBrokerUrl="tcp://localhost:1883" -DthingGovernor="http://localhost:8080" -classpath %classpath at.ac.tuwien.dsg.thingsim.Application --server.port=8081</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -DthingConfFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\scenario_1_simple_sensor\Sensor1160629000_114.json" -DtopologyFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\scenario_1_simple_sensor\topology.json" -DthingName="Sensor1160629000_114" -DmqttBrokerUrl="tcp://localhost:1883" -DthingGovernor="http://localhost:8080" -classpath %classpath at.ac.tuwien.dsg.thingsim.Application --server.port=8081</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DthingConfFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\scenario_1_simple_sensor\Sensor1160629000_114.json" -DtopologyFile="J:\Informatik\Master Thesis\thesis-repo\work_sw\ThingSim\scenario_1_simple_sensor\topology.json" -DthingName="Sensor1160629000_114" -DmqttBrokerUrl="tcp://localhost:1883" -DthingGovernor="http://localhost:8080" -classpath %classpath at.ac.tuwien.dsg.thingsim.Application --server.port=8081</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+    </actions>

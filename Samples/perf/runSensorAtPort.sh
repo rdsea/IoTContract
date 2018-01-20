@@ -1,0 +1,1 @@
+java -DthingConfFile=$1 -DtopologyFile=$2 -DthingName=$3 -DmqttBrokerUrl="tcp://iot.eclipse.org:1883" -DthingGovernor="http://localhost:8088" -jar "../../ThingSim/target/ThingSim-1.0-SNAPSHOT.jar" --server.port=$4

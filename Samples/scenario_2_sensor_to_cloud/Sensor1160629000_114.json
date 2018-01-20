@@ -1,0 +1,59 @@
+{
+	"ports" : [
+		{"name": "T-IN-1",
+		 "adapter" : "FILE",
+		 "type" :"DATA",
+		 "direction" : "IN"},
+		{"name": "T-OUT-1",
+		 "adapter" : "MQTT",
+		 "type" :"DATA",
+		 "direction" : "OUT"}
+	],
+	"dataPoints" : [
+		{
+			"port" : "T-IN-1",
+			"points" : ["114","113"]
+		},
+		{
+			"port" : "T-OUT-1",
+			"points" : ["114","113"]
+		}
+	],
+	"portParameters" : [
+		{
+			"port" : "T-IN-1",
+			"attributes" : [
+				{
+					"name" : "filename",
+					"value" : "J:\\Informatik\\Master Thesis\\thesis-repo\\work_sw\\ThingSim\\scenario_2_sensor_to_cloud\\stationmonitoringdata1160629000_114.csv"
+				},
+				{
+					"name" : "repeatDelay",
+					"value" : "5"
+				},
+				{
+					"name" : "nrOfRepeats",
+					"value" : "2"
+				},
+				{
+					"name" : "fileformat",
+					"value" : "csv"
+				},
+				{
+					"name" : "nameColumn",
+					"value" : "datapoint_id"
+				},
+				{
+					"name" : "timestampColumn",
+					"value" : "event_time"
+				},
+				{
+					"name" : "valueColumns",
+					"value" : "value"
+				}
+			]
+		}
+	],
+	"scriptfile" : "CloudSensor.js",
+	"name" : "Sensor1160629000_114"
+}
