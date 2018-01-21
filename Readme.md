@@ -41,7 +41,7 @@ The framework provides the base to ensure that IoT units and services can fulfil
 Figure 2 shows the contract model and the connection to the SALSA data model.
 
 ![N|Solid](https://github.com/rdsea/IoTContract/blob/master/documents/images/contract-model.png)
-Figure 1: Contract Model.
+Figure 2: Contract Model.
 
 Elements of the contract model are:
 - ContractItem links between contracts and services.
@@ -76,14 +76,15 @@ Each entity supports following access methods:
 | Delete{Entity}  | DELETE | /{entity}/{name} | delete a specific instance defined by name |
 
 Each of the functions described above can be applied to following entities (resources in REST terminology).
+Base URL is http://<SALSA IP>:8080>/salsa-engine/rest/elise
 
-| Resource         | URL                                 |Description                                          |
-|------------------|-------------------------------------|-----------------------------------------------------|
-| Contract         |.../elise/servicetemplate            | Contract is linked to SALSA ServiceTemplate         |
-| ContractTemplate |.../elise/extracdg/contracttemplate  | Contract template as blueprint for contract         |
-| ContractTerm     | .../elise/extracdg/contractterm     | Contract term as basic building blocks of contracts |
-| ContractTermType | .../elise/extracdg/contracttermtype | Definition of types of contract terms               |
-| Script           | .../elise/extracdg/script           | Definition of scripts for enforcement               |
+| Resource         | URL                                 |Description                                           |
+|------------------|-------------------------------------|------------------------------------------------------|
+| Contract         | <base URL>/servicetemplate           | Contract is linked to SALSA ServiceTemplate         |
+| ContractTemplate | <base URL>/extracdg/contracttemplate | Contract template as blueprint for contract         |
+| ContractTerm     | <base URL>/extracdg/contractterm     | Contract term as basic building blocks of contracts |
+| ContractTermType | <base URL>/extracdg/contracttermtype | Definition of types of contract terms               |
+| Script           | <base URL>/extracdg/script           | Definition of scripts for enforcement               |
 
 ### Governance Controller
 
@@ -94,14 +95,16 @@ contract violation messaging and logging.
 
 Following web service resources are provided:
 
-| Resource     | Method  | URL                             | Description                         |
-|--------------|---------|---------------------------------|-------------------------------------|
-| Assignment   | POST    | /governor/assign                | Assign a contract to a unit         |
-| Script       | GET     | /governor/scripts/{unit}        | Retrieve scripts for a unit         |
-| Registration | GET     | /governor/register/{unit}       | Retrieve registrations for a unit   |
-| Registration | POST    | /governor/register Create       | Registration for a unit             |
-| Logging      | POST    | /governor/log                   | Log a contract violation to the log |
-| Logging      | GET     | /governor/log/{contract}        | Retrieve the logs for a contract    |
-| Logging      | GET     | /governor/sclog/{contract}/{id} | Retrieve the fingerprint of a log   |
-| Payment      | POST    | /governor/payment               | Perform a paymenton the blockchain  |
+Base URL is http://<Governor IP>:8088>
+
+| Resource     | Method  | URL                                       | Description                         |
+|--------------|---------|-------------------------------------------|-------------------------------------|
+| Assignment   | POST    | <base URL>/governor/assign                | Assign a contract to a unit         |
+| Script       | GET     | <base URL>/governor/scripts/{unit}        | Retrieve scripts for a unit         |
+| Registration | GET     | <base URL>/governor/register/{unit}       | Retrieve registrations for a unit   |
+| Registration | POST    | <base URL>/governor/register Create       | Registration for a unit             |
+| Logging      | POST    | <base URL>/governor/log                   | Log a contract violation to the log |
+| Logging      | GET     | <base URL>/governor/log/{contract}        | Retrieve the logs for a contract    |
+| Logging      | GET     | <base URL>/governor/sclog/{contract}/{id} | Retrieve the fingerprint of a log   |
+| Payment      | POST    | <base URL>/governor/payment               | Perform a paymenton the blockchain  |
 
