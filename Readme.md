@@ -23,10 +23,10 @@ The framework provides the base to ensure that IoT units and services can fulfil
 - in ThingGovernor: "mvn clean install"
 
 ## Run an Example with the IoT Unit Simulator
-- run SALSA with "java -jar <SALSA dir>/standalone/target/salsa-engine.jar", default port for SALSA web service is 8080
-- cd <IoTContract dir>/Samples/general
+- run SALSA with "java -jar {SALSA dir}/standalone/target/salsa-engine.jar", default port for SALSA web service is 8080
+- cd {IoTContract dir}/Samples/general
 - run ThingGovernor with "./run_Governor.sh", default port for ThingGovernor web service is 8088
-- cd <IoTContract dir>/Samples/scenario_1_DPNameCheck
+- cd {IoTContract dir}/Samples/scenario_1_DPNameCheck
 - ./buildContract_DPNameCheck.sh to create a sample contract
 - ./assignContract_Sensor1160629000_114.sh to assign an IoT unit to the contract
 - ./run_Sensor1160629000_114.sh to run a simulated sensor with a set of data
@@ -80,11 +80,11 @@ Base URL is http://<SALSA IP>:8080>/salsa-engine/rest/elise
 
 | Resource         | URL                                 |Description                                           |
 |------------------|-------------------------------------|------------------------------------------------------|
-| Contract         | <base URL>/servicetemplate           | Contract is linked to SALSA ServiceTemplate         |
-| ContractTemplate | <base URL>/extracdg/contracttemplate | Contract template as blueprint for contract         |
-| ContractTerm     | <base URL>/extracdg/contractterm     | Contract term as basic building blocks of contracts |
-| ContractTermType | <base URL>/extracdg/contracttermtype | Definition of types of contract terms               |
-| Script           | <base URL>/extracdg/script           | Definition of scripts for enforcement               |
+| Contract         | {base URL}/servicetemplate           | Contract is linked to SALSA ServiceTemplate         |
+| ContractTemplate | {base URL}/extracdg/contracttemplate | Contract template as blueprint for contract         |
+| ContractTerm     | {base URL}/extracdg/contractterm     | Contract term as basic building blocks of contracts |
+| ContractTermType | {base URL}/extracdg/contracttermtype | Definition of types of contract terms               |
+| Script           | {base URL}/extracdg/script           | Definition of scripts for enforcement               |
 
 ### Governance Controller
 
@@ -95,32 +95,32 @@ contract violation messaging and logging.
 
 Following web service resources are provided:
 
-Base URL is http://<Governor IP>:8088>
+Base URL is http://{Governor IP}:8088>
 
 | Resource     | Method  | URL                                       | Description                         |
 |--------------|---------|-------------------------------------------|-------------------------------------|
-| Assignment   | POST    | <base URL>/governor/assign                | Assign a contract to a unit         |
-| Script       | GET     | <base URL>/governor/scripts/{unit}        | Retrieve scripts for a unit         |
-| Registration | GET     | <base URL>/governor/register/{unit}       | Retrieve registrations for a unit   |
-| Registration | POST    | <base URL>/governor/register Create       | Registration for a unit             |
-| Logging      | POST    | <base URL>/governor/log                   | Log a contract violation to the log |
-| Logging      | GET     | <base URL>/governor/log/{contract}        | Retrieve the logs for a contract    |
-| Logging      | GET     | <base URL>/governor/sclog/{contract}/{id} | Retrieve the fingerprint of a log   |
-| Payment      | POST    | <base URL>/governor/payment               | Perform a paymenton the blockchain  |
+| Assignment   | POST    | {base URL}/governor/assign                | Assign a contract to a unit         |
+| Script       | GET     | {base URL}/governor/scripts/{unit}        | Retrieve scripts for a unit         |
+| Registration | GET     | {base URL}/governor/register/{unit}       | Retrieve registrations for a unit   |
+| Registration | POST    | {base URL}/governor/register Create       | Registration for a unit             |
+| Logging      | POST    | {base URL}/governor/log                   | Log a contract violation to the log |
+| Logging      | GET     | {base URL}/governor/log/{contract}        | Retrieve the logs for a contract    |
+| Logging      | GET     | {base URL}/governor/sclog/{contract}/{id} | Retrieve the fingerprint of a log   |
+| Payment      | POST    | {base URL}/governor/payment               | Perform a paymenton the blockchain  |
 
 ## Run the Performance Test
 
 Requires access to the RaspberryPi cluster vi TUNet VPN
 
-On SALSA machine open ssh to <RaspberryPI IP address> with reverse ssh tunnel to 8080
+On SALSA machine open ssh to {RaspberryPI IP address} with reverse ssh tunnel to 8080
   
 On RaspberryPI:
-- login with username, password <ask for it>
+- login with username, password {ask for it}
 - testrpc --deterministic #simulator for Ethereum blockchain
-- copy Samples to /home/pi/<username>/Samples/general
-- cd /home/pi/<username>/Samples/general
+- copy Samples to /home/pi/{username}/Samples/general
+- cd /home/pi/{username}/Samples/general
 - ./run_Governor.sh
 - open second terminal on RaspberryPI
-- cd /home/pi/<username>/Samples/perf
-- ./run_M<x> for the choosen scenario # result logs are in m<x>.out
+- cd /home/pi/{username}/Samples/perf
+- ./run_M{x} for the choosen scenario # result logs are in m{x}.out
 
