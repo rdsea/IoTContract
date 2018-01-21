@@ -108,3 +108,19 @@ Base URL is http://<Governor IP>:8088>
 | Logging      | GET     | <base URL>/governor/sclog/{contract}/{id} | Retrieve the fingerprint of a log   |
 | Payment      | POST    | <base URL>/governor/payment               | Perform a paymenton the blockchain  |
 
+## Run the Performance Test
+
+Requires access to the RaspberryPi cluster vi TUNet VPN
+
+On SALSA machine open ssh to <RaspberryPI IP address> with reverse ssh tunnel to 8080
+  
+On RaspberryPI:
+- login with username, password <ask for it>
+- testrpc --deterministic #simulator for Ethereum blockchain
+- copy Samples to /home/pi/<username>/Samples/general
+- cd /home/pi/<username>/Samples/general
+- ./run_Governor.sh
+- open second terminal on RaspberryPI
+- cd /home/pi/<username>/Samples/perf
+- ./run_M<x> for the choosen scenario # result logs are in m<x>.out
+
