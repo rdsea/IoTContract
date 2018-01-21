@@ -95,7 +95,7 @@ contract violation messaging and logging.
 
 Following web service resources are provided:
 
-Base URL is http://{Governor IP}:8088>
+Base URL is http://{Governor IP}:8088
 
 | Resource     | Method  | URL                                       | Description                         |
 |--------------|---------|-------------------------------------------|-------------------------------------|
