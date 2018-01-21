@@ -102,7 +102,7 @@ Base URL is http://{Governor IP}:8088>
 | Assignment   | POST    | {base URL}/governor/assign                | Assign a contract to a unit         |
 | Script       | GET     | {base URL}/governor/scripts/{unit}        | Retrieve scripts for a unit         |
 | Registration | GET     | {base URL}/governor/register/{unit}       | Retrieve registrations for a unit   |
-| Registration | POST    | {base URL}/governor/register Create       | Registration for a unit             |
+| Registration | POST    | {base URL}/governor/register              | Create registration for a unit      |
 | Logging      | POST    | {base URL}/governor/log                   | Log a contract violation to the log |
 | Logging      | GET     | {base URL}/governor/log/{contract}        | Retrieve the logs for a contract    |
 | Logging      | GET     | {base URL}/governor/sclog/{contract}/{id} | Retrieve the fingerprint of a log   |
