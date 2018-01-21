@@ -16,11 +16,18 @@ The framework provides the base to ensure that IoT units and services can fulfil
 
 ## Installation
 
+### Requirements
+- Java 8 JDK (not just JRE)
+- Maven 3.x
+- Curl # to run the samples only
+
+### Build
 - The contract model is implemented in SALSA. Download stable version from https://github.com/tuwiendsg/SALSA
 - build it with "mvn clean install"
 - Download the contract framework from https://github.com/rdsea/IoTContract
-- in ThingSim: "mvn clean install"
+- copy ThingGovernor/maven_jars to local maven repository
 - in ThingGovernor: "mvn clean install"
+- in ThingSim: "mvn clean install" # only if you want to run the IoT unit simulator
 
 ## Run an Example with the IoT Unit Simulator
 - run SALSA with "java -jar {SALSA dir}/standalone/target/salsa-engine.jar", default port for SALSA web service is 8080
