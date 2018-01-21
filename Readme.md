@@ -110,7 +110,7 @@ Base URL is http://{Governor IP}:8088>
 
 ## Run the Performance Test
 
-Requires access to the RaspberryPi cluster vi TUNet VPN
+Requires access to the RaspberryPi cluster via TUNet VPN
 
 On SALSA machine open ssh to {RaspberryPI IP address} with reverse ssh tunnel to 8080
   
