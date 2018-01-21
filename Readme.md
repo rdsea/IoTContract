@@ -76,7 +76,7 @@ Each entity supports following access methods:
 | Delete{Entity}  | DELETE | /{entity}/{name} | delete a specific instance defined by name |
 
 Each of the functions described above can be applied to following entities (resources in REST terminology).
-Base URL is http://<SALSA IP>:8080>/salsa-engine/rest/elise
+Base URL is http://{SALSA IP}:8080>/salsa-engine/rest/elise
 
 | Resource         | URL                                 |Description                                           |
 |------------------|-------------------------------------|------------------------------------------------------|
