@@ -1,4 +1,5 @@
 # IoTContract
+This work is carried out in the context of a master thesis within the RDSEA team https://rdsea.github.io.
 ## Introduction
 
 IoTContract provides a framework for IoT contract definition, monitoring and enforcement. Contracts are defined as objects according to a contract model and assigned to IoT units. Monitoring of IoT units is derived from contracts and provides information to contract enforcement. Figure 1 gives an overview of the
