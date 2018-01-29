@@ -1,0 +1,24 @@
+[IoT Contract]
+Copyright [2018] [Copyright Peter Klein, Hong-Linh Truong]
+
+This product includes software developed for
+Spring Framework – (https://spring.io/)
+Licensed under [Apache V2.0]
+
+SLF4J - (https://www.slf4j.org)
+Licensed under [MIT License]
+
+Logback - (https://logback.qos.ch)
+Licensed under [EPL v1.0, LGPL 2.1]
+
+Mozilla Rhino - (https://developer.mozilla.org/de/docs/Rhino)
+Licensed under [Mozilla Public License 2.0]
+
+AspectJ - (https://www.eclipse.org/aspectj/)
+Licensed under [EPL v1.0]
+
+Web3J - (https://github.com/web3j/)
+Licensed under [Apache V2.0]
+
+Salsa - (http://tuwiendsg.github.io/SALSA/#abstract)
+Licensed under [Apache V2.0]
