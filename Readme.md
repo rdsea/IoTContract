@@ -3,7 +3,7 @@ This work is carried out in the context of a master thesis within the RDSEA team
 
 Citations: 
 
-- Hong-Linh Truong, Peter Klein, "Contract DevOps for IoT Microservices", Mar 2018, [Preprint PDF] (https://www.researchgate.net/publication/323572654_Contract_DevOps_for_IoT_Microservices)
+- Hong-Linh Truong, Peter Klein, "Contract DevOps for IoT Microservices", Mar 2018, [Preprint PDF](https://www.researchgate.net/publication/323572654_Contract_DevOps_for_IoT_Microservices)
 - Peter Klein, "Contract Definition and Governance for IoT", Master thesis, TU Wien, Feb 2018. 
 ## Introduction
 
