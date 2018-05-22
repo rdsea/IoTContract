@@ -1,0 +1,22 @@
+{
+      "name": "DPAvailCheck",
+      "type": "DPChecks",
+      "constraints": [      {
+         "name": "DPAvailCheck",
+         "type": "",
+         "enforcementScript": "DPAvailCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point values",
+         "parameters": [         {
+            "name": "RequiredAvail",
+            "datatype": "Integer",
+            "description": "required availability",
+            "unit": "int"
+         },{
+            "name": "AvailInterval",
+            "datatype": "Integer",
+            "description": "interval for availability check",
+            "unit": "msec"
+         }]
+      }]
+   }

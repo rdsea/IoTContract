@@ -1,0 +1,7 @@
+{
+   "name": "DPTimeCheck",
+   "code": "var checkMaxTime = @DPMaxTime;var newTS = new Date().getTime();var lastTS = Number(scratchpad.get(dataPoint.getName()));if (lastTS == 0) {scratchpad.put(dataPoint.getName(), newTS);} else { if ((newTS - lastTS)> checkMaxTime) {_reason='NOTIFY';_log = 'max wait time has been reached, contract violated, newTS=' + newTS + ' lastTS=' + lastTS + 'diff=' + (newTS - lastTS);} scratchpad.put(dataPoint.getName(), newTS);}",
+   "version": "1.0"
+}
+
+

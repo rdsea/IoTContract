@@ -1,9 +1,9 @@
 {
-   "uuid": "DPFullCheck",
-   "name": "DPFullCheck",
+   "uuid": "DPAvailCheck",
+   "name": "DPAvailCheck",
    "contract":    {
-      "name": "DPFullCheckContract",
-      "template": "DPFullCheckTemplate",
+      "name": "DPAvailCheckContract",
+      "template": "DPAvailCheckTemplate",
       "partners": [      {
          "name": "Peter"
       }],
@@ -18,18 +18,17 @@
          "value": "114"
       },
 	  {
-         "name": "DPMinValue",
+         "name": "RequiredAvail",
          "datatype": "Integer",
-         "description": "min value",
+         "description": "required availability",
          "unit": "int",
-         "value": "0"
-      },
-	  {
-         "name": "DPMaxValue",
+         "value": "99"
+      },{
+         "name": "AvailInterval",
          "datatype": "Integer",
-         "description": "max value",
-         "unit": "int",
-         "value": "1000"
+         "description": "interval for availability check",
+         "unit": "msec",
+         "value": "30000"
       }],
       "metaData": [      {
          "name": "validFrom",

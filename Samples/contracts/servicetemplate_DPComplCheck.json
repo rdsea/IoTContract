@@ -1,9 +1,9 @@
 {
-   "uuid": "DPFullCheck",
-   "name": "DPFullCheck",
+   "uuid": "DPComplCheck",
+   "name": "DPComplCheck",
    "contract":    {
-      "name": "DPFullCheckContract",
-      "template": "DPFullCheckTemplate",
+      "name": "DPComplCheckContract",
+      "template": "DPComplCheckTemplate",
       "partners": [      {
          "name": "Peter"
       }],
@@ -18,18 +18,17 @@
          "value": "114"
       },
 	  {
-         "name": "DPMinValue",
+         "name": "RequiredCompl",
          "datatype": "Integer",
-         "description": "min value",
+         "description": "required completeness",
          "unit": "int",
-         "value": "0"
-      },
-	  {
-         "name": "DPMaxValue",
+         "value": "3"
+      },{
+         "name": "ComplInterval",
          "datatype": "Integer",
-         "description": "max value",
-         "unit": "int",
-         "value": "1000"
+         "description": "interval for completeness check",
+         "unit": "msec",
+         "value": "30000"
       }],
       "metaData": [      {
          "name": "validFrom",

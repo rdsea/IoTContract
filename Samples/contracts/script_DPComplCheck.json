@@ -1,0 +1,5 @@
+{
+   "name": "DPComplCheck",
+   "code": "var requiredCompl = @RequiredCompl;var complInterval = @ComplInterval;var ts = new Date().getTime();var cc=0;function calcCompl() {var successes = 0; for (i=0;i<scratchpadKeys.length;i++) { key = scratchpadKeys[i]; value = scratchpad.get(key); if (key > ts - Number(complInterval)) { if (value == 'success') { successes += 1;} } } return successes;} if (Number(dataPoint.getValue() > 0)) {scratchpad.put(ts, 'success');}  cc=calcCompl();if (cc < requiredCompl) {_reason='NOTIFY';_log = 'completeness has not been reached, contract violated, completion=' + cc;}",
+   "version": "1.0"
+}

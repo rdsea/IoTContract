@@ -1,0 +1,17 @@
+{
+      "name": "DPTimeCheck",
+      "type": "DPChecks",
+      "constraints": [      {
+         "name": "DPTimeCheck",
+         "type": "",
+         "enforcementScript": "DPTimeCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point values",
+         "parameters": [         {
+            "name": "DPMaxTime",
+            "datatype": "Integer",
+            "description": "max time between two values",
+            "unit": "int"
+         }]
+      }]
+   }

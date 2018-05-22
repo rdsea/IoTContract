@@ -1,9 +1,9 @@
 {
-   "uuid": "DPFullCheck",
-   "name": "DPFullCheck",
+   "uuid": "DPTimeCheck",
+   "name": "DPTimeCheck",
    "contract":    {
-      "name": "DPFullCheckContract",
-      "template": "DPFullCheckTemplate",
+      "name": "DPTimeCheckContract",
+      "template": "DPTimeCheckTemplate",
       "partners": [      {
          "name": "Peter"
       }],
@@ -18,17 +18,10 @@
          "value": "114"
       },
 	  {
-         "name": "DPMinValue",
+         "name": "DPMaxTime",
          "datatype": "Integer",
-         "description": "min value",
-         "unit": "int",
-         "value": "0"
-      },
-	  {
-         "name": "DPMaxValue",
-         "datatype": "Integer",
-         "description": "max value",
-         "unit": "int",
+         "description": "max time between 2 values",
+         "unit": "sec",
          "value": "1000"
       }],
       "metaData": [      {

@@ -1,0 +1,22 @@
+{
+      "name": "DPComplCheck",
+      "type": "DPChecks",
+      "constraints": [      {
+         "name": "DPComplCheck",
+         "type": "",
+         "enforcementScript": "DPComplCheck",
+         "compositionScript": null,
+         "description": "check the allowed data point values",
+         "parameters": [         {
+            "name": "RequiredCompl",
+			"datatype": "Integer",
+			"description": "required completeness",
+			"unit": "int"
+         },{
+            "name": "ComplInterval",
+			"datatype": "Integer",
+			"description": "interval for completeness check",
+			"unit": "msec"
+         }]
+      }]
+   }

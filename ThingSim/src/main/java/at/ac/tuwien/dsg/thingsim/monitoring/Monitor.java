@@ -169,6 +169,10 @@ public class Monitor {
                 ScriptableObject.putProperty(scope, "dataPoint", wrappedDp);
                 Object wrappedPort = Context.javaToJS(port, scope);
                 ScriptableObject.putProperty(scope, "port", wrappedPort);
+                Object wrappedScratchpad = Context.javaToJS(scratchpad, scope);
+                ScriptableObject.putProperty(scope, "scratchpad", wrappedScratchpad);
+                Object wrappedScratchpadKeys = Context.javaToJS(scratchpad.keySet().toArray(), scope);
+                ScriptableObject.putProperty(scope, "scratchpadKeys", wrappedScratchpadKeys);
                 System.out.println("Port=" + port);
                 Object o = ((org.mozilla.javascript.Script)script).exec(cx, scope);
                 String r = Context.toString(o);

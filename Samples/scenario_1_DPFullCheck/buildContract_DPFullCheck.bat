@@ -1,5 +1,6 @@
-curl -v -d @"..\contracts\script_DPNameCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/script
-curl -v -d @"..\contracts\script_DPValueCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/script
+curl -v -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/manager/clean
+curl -v -d @"..\enforcementscripts\script_DPNameCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/script
+curl -v -d @"..\enforcementscripts\script_DPValueCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/script
 curl -v -d @"..\contracts\termtype_DPCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/contracttermtype
 curl -v -d @"..\contracts\term_DPNameCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/contractterm
 curl -v -d @"..\contracts\term_DPValueCheck.json" -H "Content-Type: application/json" -X POST http://localhost:8080/salsa-engine/rest/elise/extracdg/contractterm
